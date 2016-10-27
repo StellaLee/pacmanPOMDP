@@ -1,0 +1,22 @@
+class: "MDPStaticTest"
+
+numRuns: "10"
+numWinsForCredit: "1"
+layout_name: "smallHunt"
+min_score: "-1500"
+
+layout_str: """
+%%%%%%%%%
+%.  P G.% 
+%%%%%%%%%
+% %%%%%%%
+%%%%%%%%%
+"""
+
+observe: "True"
+elapse: "True"
+inference: "ExactInference"
+maxMoves: "1000"
+numGhosts: "1"
+prior: "(2,3);(6,3)"
+

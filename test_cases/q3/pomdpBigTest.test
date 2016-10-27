@@ -1,0 +1,24 @@
+class: "POMDPBigTest"
+
+numRuns: "10"
+numWinsForCredit: "8"
+layout_name: "BigTest"
+min_score: "25"
+
+layout_str: """
+%%%%%%%%%%%
+%P       G%
+%  %%% %% %
+%        .%
+%%%%%%%%%%%
+% %%%%%%%%%
+%%%%%%%%%%%
+"""
+
+observe: "True"
+elapse: "True"
+inference: "ExactInference"
+maxMoves: "1000"
+numGhosts: "1"
+rolloutPolicy: "Better"
+

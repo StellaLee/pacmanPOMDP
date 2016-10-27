@@ -1,0 +1,23 @@
+class: "MDPMLETest"
+
+numRuns: "10"
+numWinsForCredit: "8"
+layout_name: "smallHunt"
+min_score: "30"
+
+layout_str: """
+%%%%%%%
+%P   G%
+%  %% %
+%    .%
+%%%%%%%
+% %%%%%
+%%%%%%%
+"""
+
+observe: "True"
+elapse: "True"
+inference: "ExactInference"
+maxMoves: "1000"
+numGhosts: "1"
+

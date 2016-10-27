@@ -1,0 +1,19 @@
+Answer the questions posed to you in the assigment here!
+Please provide concise answers. No more than 2-3 sentences is necessary.
+
+Question 1:Now the agent doesn't do very well. Many times, it will run into the ghost. Why? The agent will also thrash around a lot. Why?
+Answer: Because the world is only observable when the paceman takes the STOP action.The ghost thrashed because it does not know which action is the best only given partial observation.
+
+Question2: Implement the simulate and rolloutUniform methods in the POMDPAgent class of bustersAgents.py. Let's try running your new agent in the world from Question 1.
+
+python autograder.py -t test_cases/q2/pomdpStaticTest
+This agent does much better! Why?
+
+Now, let's try running your agent in a bigger world, BigTest. Note that watching 10 runs may take a long time. You don't need to run this test to completion if you are sure your code is correct.
+
+python autograder.py -t test_cases/q2/pomdpBigTest
+Pacman does eventually reach the goal, but it takes forever. Why?
+
+Answer: Pacman is doing better because it stacks the trials in history to learn the best move. For BigTest it takes long to reach the goal because of the dimension of the game. It will take more steps for the Pacman to reach the food and therefore more branches in the Monte Carlo Tree to reach the goal or hit the tree depth limit. 
+
+
